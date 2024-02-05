@@ -1,0 +1,2 @@
+# securitycopilot
+Security Copilot resources
