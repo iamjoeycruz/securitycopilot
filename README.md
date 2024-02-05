@@ -1,2 +1,1 @@
-**Disclaimer: **
-The resources in this repository are provided "as is" without any express or implied warranty of any kind, including warranties of merchantability, non-infringement, or fitness for a particular purpose. The authors and contributors of this repository do not assume any responsibility or liability for the use or misuse of the resources, or for any errors, omissions, or inaccuracies that may arise from the use of the resources. The users of this repository are solely responsible for complying with any applicable laws, regulations, and licenses that may apply to the use of the resources.
+
