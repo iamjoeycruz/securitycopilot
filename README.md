@@ -1,3 +1,7 @@
+Creating effective prompts:
+https://learn.microsoft.com/en-us/security-copilot/prompting-tips
+
+
 Security Copilot Resources:
 
 
