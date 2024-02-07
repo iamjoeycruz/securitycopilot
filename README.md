@@ -29,6 +29,10 @@ Author: Rod Trent
 # Technical Docs ⚙️
 Some of the technical docs that are helpful when starting with Security Copilot. 
 
+## Microsoft Cybersecurity Reference Architectures
+The Microsoft Cybersecurity Reference Architectures (MCRA) are the component of Microsoft's Security Adoption Framework (SAF) that describe Microsoft’s cybersecurity capabilities and technologies.
+Link: https://aka.ms/mcra
+
 ## Shared responsibility AI model
 As you consider and evaluate AI enabled integration, it's critical to understand the shared responsibility model and which tasks the AI platform or application provider handle and which tasks you handle. 
 Link: https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility-ai
