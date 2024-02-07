@@ -2,7 +2,7 @@ Understanding the basics:
 
 Intro video:
 How Microsoft Security Copilot works
-[** YouTubne ** ](https://youtu.be/0lg_derTkaM?si=QR2kCOPO2_LVa9v0)
+[YouTube](https://youtu.be/0lg_derTkaM?si=QR2kCOPO2_LVa9v0)
 
 Creating effective prompts:
 https://learn.microsoft.com/en-us/security-copilot/prompting-tips
