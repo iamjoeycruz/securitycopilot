@@ -9,7 +9,7 @@ https://learn.microsoft.com/en-us/security-copilot/prompting-tips
 
 
 
-Plugins & Loigc Apps 
+Plugins & Logic Apps 
 
 Author: Yaniv Shasha
 Link: https://github.com/Yaniv-Shasha/SecurityCopilot
