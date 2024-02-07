@@ -23,6 +23,9 @@ Author: Yaniv Shasha
 Link: https://github.com/paulgoodsonMSFT/SecurityCopilotPlugins
 Author: Paul Goodson 
 
+Link: https://github.com/rod-trent/Security-Copilot
+Author: Rod Trent
+
 # Technical Docs ⚙️
 Some of the technical docs that are helpful when starting with Security Copilot. 
 
