@@ -37,7 +37,6 @@ Link: https://aka.ms/mcra
 As you consider and evaluate AI enabled integration, it's critical to understand the shared responsibility model and which tasks the AI platform or application provider handle and which tasks you handle. 
 Link: https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility-ai
 
-
 ## Staying up to date: 
 Below are some blogs from experts that go deeper into AI and Security Copilot. 
 
@@ -46,3 +45,14 @@ Author: Brandon Dixon
 
 Link: https://blog.openthreatresearch.com/demystifying-generative-ai-a-security-researchers-notes/
 Author: Roberto Rodriguez 
+
+## Understanding Tokens 
+AI tokens can be thought of as pieces of words. When using AI models like GPT-3, the input text is broken down into these tokens before processing. These tokens are not necessarily split exactly where words start or end; they can include trailing spaces and even sub-words. Here are some helpful rules of thumb for understanding tokens:
+
+1 token is approximately equal to 4 characters in English.
+1 token is roughly equivalent to ¾ of a word.
+100 tokens correspond to about 75 words or 1-2 sentences.
+1 paragraph is approximately 100 tokens.
+1,500 words translate to around 2,048 tokens.
+
+Use tools like OpenAI's Tokenizer: https://platform.openai.com/tokenizer 
