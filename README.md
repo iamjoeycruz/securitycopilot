@@ -4,6 +4,7 @@ Below are some resources that are helpful in ramping up and using Security Copil
 ## How Microsoft Security Copilot works
 Watch this Microsoft Mechanics video that goes over the product end-to-end and provides insights into how it works. 
 Link: https://youtu.be/0lg_derTkaM?si=QR2kCOPO2_LVa9v0
+Playlist: https://www.youtube.com/playlist?list=PL3ZTgFEc7LyuQRLD61q9YqPKEDlZj4j5u
 
 ## Learning Security Copilot 
 Learn how to get started and use Security Copilot 
