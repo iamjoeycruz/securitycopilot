@@ -1,5 +1,5 @@
 # Understanding the basics 🔃
-I have put together some resources that are helpful in ramping up and using Security Copilot
+Below are some resources that are helpful in ramping up and using Security Copilot.
 
 ## How Microsoft Security Copilot works
 Watch this Microsoft Mechanics video that goes over the product end-to-end and provides insights into how it works. 
