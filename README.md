@@ -1,22 +1,22 @@
 # Understanding the basics 🔃
-Below are some resources that are helpful in ramping up and using Security Copilot.
+Below are some resources that are helpful in ramping up and using Copilot for Security.
 
-## How Microsoft Security Copilot works
+## How Microsoft Copilot for Security works
 Watch this Microsoft Mechanics video that goes over the product end-to-end and provides insights into how it works. 
 - Link: https://youtu.be/0lg_derTkaM?si=QR2kCOPO2_LVa9v0
 - Playlist: https://www.youtube.com/playlist?list=PL3ZTgFEc7LyuQRLD61q9YqPKEDlZj4j5u
 
-## Learning Security Copilot 
-Learn how to get started and use Security Copilot 
+## Learning Copilot for Security 
+Learn how to get started and use Copilot for Security 
 - Link: https://learn.microsoft.com/en-us/security-copilot/
 
 ## Creating effective prompts 
-Understanding how to prompt is paramount when using Security Copilot
+Understanding how to prompt is paramount when using Copilot for Security
 - Link: https://learn.microsoft.com/en-us/security-copilot/prompting-tips
 
 
 ## Getting hands on with Plugins | Logic Apps | Promptbooks 🏗️
-Below are some of the projects some of the Security Copilot experts have created. 
+Below are some of the projects some of the Copilot for Security experts have created. 
 
 - Link: https://github.com/Yaniv-Shasha/SecurityCopilot
 Author: Yaniv Shasha
@@ -28,7 +28,7 @@ Author: Paul Goodson
 Author: Rod Trent
 
 # Technical Docs ⚙️
-Some of the technical docs that are helpful when starting with Security Copilot. 
+Some of the technical docs that are helpful when starting with Copilot for Security. 
 
 ## Microsoft Cybersecurity Reference Architectures
 The Microsoft Cybersecurity Reference Architectures (MCRA) are the component of Microsoft's Security Adoption Framework (SAF) that describe Microsoft’s cybersecurity capabilities and technologies.
@@ -39,7 +39,7 @@ As you consider and evaluate AI enabled integration, it's critical to understand
 - Link: https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility-ai
 
 ## Staying up to date: 
-Below are some blogs from experts that go deeper into AI and Security Copilot. 
+Below are some blogs from experts that go deeper into AI and Copilot for Security. 
 
 - Link: https://applied-gai-in-security.ghost.io/
 Author: Brandon Dixon 
