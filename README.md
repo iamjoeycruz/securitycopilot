@@ -8,6 +8,7 @@ Watch this Microsoft Mechanics video that goes over the product end-to-end and p
 
 ## Learning Security Copilot 
 Learn how to get started and use Security Copilot 
+- Training: https://learn.microsoft.com/en-us/shows/learn-live/microsoft-copilot-for-security/
 - Link: https://learn.microsoft.com/en-us/security-copilot/
 
 ## Creating effective prompts 
