@@ -13,6 +13,7 @@ Learn how to get started and use Security Copilot
 
 ## Creating effective prompts 
 Understanding how to prompt is paramount when using Security Copilot
+- Link: https://learn.microsoft.com/en-us/training/modules/security-copilot-getting-started/5-create-effective-prompts
 - Link: https://learn.microsoft.com/en-us/security-copilot/prompting-tips
 
 
