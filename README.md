@@ -1,3 +1,6 @@
+# Official Copilot for Security Github
+- Link: https://github.com/Azure/Copilot-For-Security/tree/main
+
 # Understanding the basics 🔃
 Below are some resources that are helpful in ramping up and using Security Copilot.
 
