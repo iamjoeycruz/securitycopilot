@@ -1,6 +1,10 @@
 # Official Copilot for Security Github
 - Link: https://github.com/Azure/Copilot-For-Security/tree/main
 
+# Automate adding and removing Copilot for Security Secure Compute Unit (SCU) 
+Automate the SCU assigned to your Copilot deployment 
+- Link: https://github.com/Azure/Copilot-For-Security/tree/main/Monitoring/Adjust%20CFS%20Capacity%20with%20Azure%20Monitor
+
 # Understanding the basics 🔃
 Below are some resources that are helpful in ramping up and using Security Copilot.
 
