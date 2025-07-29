@@ -1,0 +1,18 @@
+Descriptor:
+  Name: SecurityImageGeneratorLogicApp
+  DisplayName: Security Image Generator via Logic App
+  Description: A security plugin that generates images using AI through Azure Logic App integration for security analysis, incident reports, network diagrams, and threat intelligence documentation
+  DescriptionDisplay: Generate custom images and diagrams for security documentation using Logic App workflows
+  SupportedAuthTypes:
+    - ApiKey
+  Authorization:
+    Type: ApiKey
+    Key: code
+    Location: QueryParams
+    AuthScheme: ''
+
+SkillGroups:
+  - Format: API
+    Settings:
+      OpenApiSpecUrl: https://raw.githubusercontent.com/iamjoeycruz/securitycopilot/main/logic-app-openapi-spec.yaml
+      EndpointUrl: https://prod-20.northcentralus.logic.azure.com:443/workflows/c6927e911fcd473c8827c2d63db27be4/triggers/When_a_HTTP_request_is_received/paths/invoke

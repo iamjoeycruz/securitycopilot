@@ -1,0 +1,197 @@
+openapi: 3.0.0
+info:
+  title: Security Image Generator Logic App API
+  description: Azure Logic App API for generating security-related images and diagrams
+  version: "1.0.0"
+
+servers:
+  - url: https://prod-20.northcentralus.logic.azure.com:443/workflows/c6927e911fcd473c8827c2d63db27be4/triggers/When_a_HTTP_request_is_received/paths/invoke
+    description: Azure Logic App endpoint
+
+paths:
+  /:
+    post:
+      operationId: generateSecurityContent
+      summary: Generate security images and diagrams
+      description: |
+        Generates various types of security-related visual content including network diagrams, 
+        threat actor profiles, and incident visualizations through Azure Logic App workflow
+        #ExamplePrompts Generate a network security diagram showing firewall architecture
+        #ExamplePrompts Create a threat actor profile for APT29
+        #ExamplePrompts Generate an incident timeline visualization for the recent breach
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                skillName:
+                  type: string
+                  description: The name of the skill to execute
+                  enum: ["GenerateSecurityDiagram", "GenerateThreatActorProfile", "GenerateIncidentVisualization"]
+                parameters:
+                  type: object
+                  description: Parameters specific to the selected skill
+                  properties:
+                    # Parameters for GenerateSecurityDiagram
+                    description:
+                      type: string
+                      description: Detailed description of the diagram or image to generate
+                    diagramType:
+                      type: string
+                      description: Type of security diagram
+                      enum: ["network", "threat-landscape", "architecture", "incident-flow", "custom"]
+                      default: "custom"
+                    style:
+                      type: string
+                      description: Visual style preference
+                      enum: ["professional", "technical", "schematic", "infographic"]
+                      default: "professional"
+                    outputFormat:
+                      type: string
+                      description: Desired output format
+                      enum: ["png", "jpg", "svg"]
+                      default: "png"
+                    # Parameters for GenerateThreatActorProfile
+                    actorName:
+                      type: string
+                      description: Name or identifier of the threat actor or group
+                    characteristics:
+                      type: string
+                      description: Key characteristics, methods, and attributes of the threat actor
+                    includeTimeline:
+                      type: string
+                      description: Whether to include a timeline of known activities
+                      enum: ["true", "false"]
+                      default: "false"
+                    threatLevel:
+                      type: string
+                      description: Threat level assessment
+                      enum: ["Low", "Medium", "High", "Critical"]
+                      default: "Medium"
+                    # Parameters for GenerateIncidentVisualization
+                    incidentDescription:
+                      type: string
+                      description: Detailed description of the security incident
+                    timeframe:
+                      type: string
+                      description: Duration or timeframe of the incident
+                      default: "unknown"
+                    affectedSystems:
+                      type: string
+                      description: Systems, networks, or assets that were affected
+                      default: "not specified"
+                    visualType:
+                      type: string
+                      description: Type of visualization
+                      enum: ["timeline", "flowchart", "network-impact", "comprehensive"]
+                      default: "comprehensive"
+                    priorityLevel:
+                      type: string
+                      description: Incident priority level
+                      enum: ["P1", "P2", "P3", "P4"]
+                      default: "P3"
+              required:
+                - skillName
+                - parameters
+            examples:
+              securityDiagram:
+                summary: Generate Security Diagram
+                value:
+                  skillName: "GenerateSecurityDiagram"
+                  parameters:
+                    description: "Network topology showing DMZ, internal network, and security controls"
+                    diagramType: "network"
+                    style: "professional"
+                    outputFormat: "png"
+              threatProfile:
+                summary: Generate Threat Actor Profile
+                value:
+                  skillName: "GenerateThreatActorProfile"
+                  parameters:
+                    actorName: "APT29"
+                    characteristics: "Advanced persistent threat group targeting government and healthcare"
+                    includeTimeline: "true"
+                    threatLevel: "High"
+              incidentVisualization:
+                summary: Generate Incident Visualization
+                value:
+                  skillName: "GenerateIncidentVisualization"
+                  parameters:
+                    incidentDescription: "Ransomware attack affecting email servers and workstations"
+                    timeframe: "72 hours"
+                    affectedSystems: "Exchange servers, 50 workstations, file shares"
+                    visualType: "comprehensive"
+                    priorityLevel: "P1"
+      responses:
+        '200':
+          description: Successfully generated security content
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    description: Whether the operation was successful
+                  imageUrl:
+                    type: string
+                    description: URL to the generated image or diagram
+                  description:
+                    type: string
+                    description: Description of the generated content
+                  metadata:
+                    type: object
+                    description: Additional metadata about the generated content
+                    properties:
+                      contentType:
+                        type: string
+                        description: Type of content generated
+                      format:
+                        type: string
+                        description: Format of the generated image
+                      dimensions:
+                        type: string
+                        description: Dimensions of the generated image
+                      generatedAt:
+                        type: string
+                        format: date-time
+                        description: Timestamp when content was generated
+        '400':
+          description: Bad request - invalid parameters
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                    description: Error message
+                  details:
+                    type: string
+                    description: Detailed error information
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                    description: Error message
+                  details:
+                    type: string
+                    description: Detailed error information
+
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: query
+      name: code
+      description: Azure Logic App access code
+
+security:
+  - ApiKeyAuth: []
